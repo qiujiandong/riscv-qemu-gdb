@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "kernel-debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/kernel/hello.elf",
+            "args": [],
+            "cwd": "${workspaceFolder}/kernel",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/riscv/bin/riscv64-unknown-elf-gdb",
+            // "setupCommands": [
+            //     {
+            //         "description": "Enable pretty-printing for gdb",
+            //         "text": "set confirm off"
+            //     },
+            // ]
+        },
+        {
+            "name": "user-debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/user/hello.elf",
+            "args": [],
+            "cwd": "${workspaceFolder}/user",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/opt/riscv/bin/riscv64-unknown-elf-gdb",
+        }
+    ]
+}
